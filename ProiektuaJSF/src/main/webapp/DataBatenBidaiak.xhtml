@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"	
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <title>Data bateko bidaiak</title>
+</h:head>
+<h:body>
+    <h:form>
+             <!-- Ride Date -->
+        <h:outputLabel for="rideDate" value="Ride Date: " />
+        <p:calendar id="rideDate" value="#{DatarekinBeans.date}" pattern="dd/MM/yyyy" />
+        
+        <h:commandButton value="Bidaiak ikusi" action="BidaiakErakutsi" />
+        <h:commandButton value="Data Sartu" action="#{DatarekinBeans.getBidaiakData}" />
+        
+        
+        
+    </h:form>
+</h:body>
+</html>

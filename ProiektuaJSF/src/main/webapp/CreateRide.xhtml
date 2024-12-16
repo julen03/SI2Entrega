@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"	
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>Create Ride</title>
+</h:head>
+
+<h:body>
+    <h:form style="text-align: center; margin-top: 20px;">
+        <h3>Create Ride</h3>
+        
+        <!-- Depart City -->
+        <h:outputLabel for="departCity" value="Depart City: " />
+        <h:inputText id="departCity" value="#{createRideBean.departCity}" /><br/><br/>
+        
+        <!-- Arrival City -->
+        <h:outputLabel for="arrivalCity" value="Arrival City: " />
+        <h:inputText id="arrivalCity" value="#{createRideBean.arrivalCity}" /><br/><br/>
+        
+        <!-- Number of Seats -->
+        <h:outputLabel for="numSeats" value="Number of Seats: " />
+        <h:inputText id="numSeats" value="#{createRideBean.numSeats}" /><br/><br/>
+        
+        <!-- Price -->
+        <h:outputLabel for="price" value="Price: " />
+        <h:inputText id="price" value="#{createRideBean.price}" /><br/><br/>
+        
+        <!-- Ride Date -->
+        <h:outputLabel for="rideDate" value="Ride Date: " />
+        <p:calendar id="rideDate" value="#{createRideBean.rideDate}" /><br/><br/>
+        
+        <!-- Buttons -->
+        <h:commandButton value="Create Ride" action="#{createRideBean.createRide}" style="margin-right: 10px;" />
+        <h:commandButton value="Close" action="Prueba.xhtml?faces-redirect=true" />
+    </h:form>
+</h:body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf17328760153300" configfile="/ProiektuaJSF/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="CreateRide.xhtml" x="420" y="108" id="pf17328766643801" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf17331665709640" inlinks="pf17331665709641" path="/CreateRide.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Prueba.xhtml" x="97" y="135" id="pf17331665709642" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf17331665709641 pf17331665709643 pf17339968953560" inlinks="pf17331665709644 pf17331665709640" path="/Prueba.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="QueryRides.xhtml" x="389" y="250" id="pf17331665709645" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf17331665709644" inlinks="pf17331665709643" path="/QueryRides.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="BidaiakErakutsi.xhtml" x="684" y="321" id="pf17339968953561" inlinks="pf17339968953562" path="/BidaiakErakutsi.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="DataBatenBidaiak.xhtml" x="168" y="384" id="pf17339968953563" outlinks="pf17339968953562" inlinks="pf17339968953560" path="/DataBatenBidaiak.xhtml"/>
+  <links id="pf17331665709641" target="pf17328766643801" source="pf17331665709642"/>
+  <links id="pf17331665709643" target="pf17331665709645" source="pf17331665709642" outcome="queryBuelta"/>
+  <links id="pf17331665709644" target="pf17331665709642" source="pf17331665709645" outcome="query"/>
+  <links id="pf17331665709640" target="pf17331665709642" source="pf17328766643801" outcome="create"/>
+  <links id="pf17339968953560" target="pf17339968953563" source="pf17331665709642" outcome="DataAukeratu">
+    <bendPoints d1Width="115" d1Height="261" d2Width="3" d2Height="12"/>
+  </links>
+  <links id="pf17339968953562" target="pf17339968953561" source="pf17339968953563" outcome="BidaiakErakutsi"/>
+</pageflow:Pageflow>

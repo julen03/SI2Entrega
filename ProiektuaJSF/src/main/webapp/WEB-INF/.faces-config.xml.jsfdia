@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#Prueba.xhtml" PATH="/Prueba.xhtml"
+  SHAPE="256,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Prueba.xhtml:0" NAME="item"
+   PATH="/Prueba.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="::#CreateRide.xhtml" NAME="output"
+    PATH="/CreateRide.xhtml" TARGET="rules:#CreateRide.xhtml"
+    TITLE="[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#Prueba.xhtml:1" NAME="item1"
+   PATH="/Prueba.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="queryBuelta::#QueryRides.xhtml"
+    NAME="output" PATH="/QueryRides.xhtml"
+    TARGET="rules:#QueryRides.xhtml" TITLE="queryBuelta" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#QueryRides.xhtml" PATH="/QueryRides.xhtml"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#QueryRides.xhtml:0" NAME="item"
+   PATH="/QueryRides.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="query::#Prueba.xhtml" NAME="output"
+    PATH="/Prueba.xhtml" TARGET="rules:#Prueba.xhtml" TITLE="query" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#CreateRide.xhtml" PATH="/CreateRide.xhtml"
+  SHAPE="480,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#CreateRide.xhtml:0" NAME="item"
+   PATH="/CreateRide.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="create::#Prueba.xhtml" NAME="output"
+    PATH="/Prueba.xhtml" TARGET="rules:#Prueba.xhtml" TITLE="create" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>
